@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'typography';
+
+#footer {
+    padding-top: 12px;
+    background: $dark-olive;
+    height: 75px;
+
+    a {
+        color: $dark-purple;
+    }
+}

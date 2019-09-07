@@ -1,0 +1,120 @@
+<section id="networking">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-6" *ngFor="let tool of tools">
+              <a href="{{tool.url}}" target="_blank">
+                <img src="{{tool.img}}" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <h4>For Networking</h4>
+          <h5>
+            You’re not alone.
+          </h5>
+          <h5>
+              There just aren’t enough women in technology, and being the only one can get lonely.
+              Break out of your silo and meet women who do what you do. Share stories, exchange advice,
+              talk tech, and be yourself. You can come to network, to cowork, or just to chat.
+          </h5>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="growth">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <h4>For Growth</h4>
+        <h5>
+            Learn from the best. TechTalks were created to be not only a networking event,
+            but an opportunity for continuous learning for skills that must constantly evolve
+            to keep up with the market. These talks will cover a wide variety of topics including:
+        </h5>
+        <h5>
+          <ul>
+            <li>How to be effective in different technology roles</li>
+            <li>Value assessment and determining appropriate compensation</li>
+            <li>APIs</li>
+            <li>Resumes and Interviews</li>
+            <li>Careers: How to Have It All</li>
+            <li>Technical sessions for javascript, .NET, java, and more</li>
+          </ul>
+        </h5>
+      </div>
+      <div class="col-sm-5 align-self-center">
+          <div class="cocktails"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="mentors">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <h4>Previous TechTalks</h4>
+        <h5>As a woman, learning to program can be intimidating! We've recruited fantastic female mentors to create a welcoming learning environment and answer those questions you may be too scared to ask! </h5>
+        <h5>These ladies write code for their day job and can't wait to help you get started. They're kind of like super heroes, with great taste!</h5>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row margin-bottom" >
+      <div class="col-sm-4 mentor leader" *ngFor="let leader of leaders">
+        <a href="http://www.twitter.com/{{leader.twitter}}" target="_blank">
+          <img class="rounded-circle" src="{{leader.img}}" alt="{{leader.name}}"/>
+          <h6>{{leader.name}}</h6>
+          <p>{{leader.title}}</p>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 mentor" *ngFor="let mentor of mentors">
+        <a href="http://www.twitter.com/{{mentor.twitter}}" target="_blank">
+          <img class="rounded-circle" src="{{mentor.img}}" alt="{{mentor.name}}"/>
+          <h6>{{mentor.name}}</h6>
+          <p>{{mentor.title}}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="signup">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <h4>Sign Up!</h4>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-5 map">
+              <h5 id="hosting-venue">Proudly hosted by {{venue.name}}</h5>
+              <a href="{{venue.url}}" target="_blank" class="host">
+                  <img src="{{venue.img}}" alt="{{venue.name}}">
+              </a>
+              <p>{{venue.address}}</p>
+              <app-map [defaultPosition]="{lat: venue.lat, lng: venue.lng}" [defaultZoom]="zm">
+                <app-marker [position]="{lat: venue.lat, lng: venue.lng}" [animation]="'DROP'"></app-marker>
+              </app-map>
+          </div>
+          <div class="col-sm-7 align-self-center">
+              <h5>Upcoming Talk: <br>{{upcomingTalk.date | date:'fullDate'}}, {{upcomingTalk.time}}
+              <br />{{upcomingTalk.name}}</h5>
+              <div style="width:100%; text-align:left;"><iframe [attr.src]="upcomingTalkTicketLink" frameborder="0" height="325" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+             <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>
+
+             <p>If the event is not yet available for sign ups, you will be directed to the TechTalks Eventbrite page.</p>
+             <ul class="list-unstyled" *ngFor="let talk of talks">
+                  <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>
+             </ul>
+          </div>
+      </div>
+  </div>
+</section>
