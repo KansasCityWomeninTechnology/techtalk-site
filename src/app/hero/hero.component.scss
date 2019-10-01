@@ -6,12 +6,23 @@
     text-align: center;
     padding: 150px 0px 100px 0px;
 
-    a.cocktails-logo {
+    .techtalks {
+      display: block;
+      height: 80px;
+      width: 300px;
+      background: url(src/assets/images/logos/techtalk_inverse.png) no-repeat 0px 0px;
+      background-size: contain;
+      margin: 0 auto;
+    }
+
+    .techtalk-logo {
         display: block;
-        height: 300px;
-        width: 300px;
-        background: url(/assets/images/logos/logo.png) no-repeat 0px 0px;
+        height: 280px;
+        width: 440px;
+        background: url(src/assets/images/techtalk_panel.jpg) no-repeat 0px 0px;
         background-size: contain;
         margin: 0 auto;
+        border: solid 5px #fff;
     }
 }
+

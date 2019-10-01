@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FinancialAidComponent } from './financial-aid/financial-aid.component';
-import { ResourcesComponent } from './resources/resources.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
@@ -28,7 +27,6 @@ import { MentorSubmitResponseComponent } from './mentor-form/mentor-submit-respo
     AppComponent,
     NavComponent,
     FinancialAidComponent,
-    ResourcesComponent,
     HomeComponent,
     FooterComponent,
     ContactComponent,

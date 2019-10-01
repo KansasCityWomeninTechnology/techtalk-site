@@ -10,18 +10,38 @@ section {
 }
 
 // Section specific styles
+#mission {
+  background: $white;
+  color: $dark-aqua;
+  padding: 150px 0px 100px 0px;
+  border-top: solid 10px $dark-aqua;
+  border-bottom: solid 10px $dark-aqua;
+  .networking-img {
+    margin-top: 20px;
+    display: block;
+    height: 300px;
+    width: 300px;
+    background: url(src/assets/images/networking.png) no-repeat 0px 0px;
+    background-size: contain;
+    margin: 0 auto;
+  }
+}
+
 #networking {
     background: $white;
     color: $dark-aqua;
     padding: 150px 0px 100px 0px;
     border-top: solid 10px $dark-aqua;
     border-bottom: solid 10px $dark-aqua;
-    img {
+    .networking-img {
         margin-top: 20px;
-    }
-    a {
-        color: #484e78;
-    }
+        display: block;
+        height: 300px;
+        width: 300px;
+        background: url(src/assets/images/networking.png) no-repeat 0px 0px;
+        background-size: contain;
+        margin: 0 auto;
+      }
 }
 
 #growth {
@@ -41,22 +61,25 @@ section {
     }
     .cocktails {
         display: block;
-        height: 210px;
-        width: 310px;
+        height: 292px;
+        width: 437px;
         border: solid 5px #fff;
         margin: 20px auto;
-        background: url(/assets/images/libations.jpg) no-repeat 0px 0px;
+        background: url(src/assets/images/growth.png) no-repeat 0px 0px;
         background-size: contain;
     }
 }
 
 #mentors {
-    background: $light-purple;
+    background: $plum;
     text-align: center;
     padding: 150px 0px 100px 0px;
-    border-top: solid 10px $dark-purple;
-    border-bottom: solid 10px $dark-purple;
+    border-top: solid 10px $light-plum;
+    border-bottom: solid 10px $light-plum;
     .mentor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
         a {
             text-decoration: none;
             color:$white;
@@ -64,6 +87,10 @@ section {
             overflow: hidden;
             img {
                width: 50%;
+            }
+            p {
+              margin: 0.75rem auto 2rem auto;
+              max-width: 25ch;
             }
         }
     }
