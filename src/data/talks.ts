@@ -47,15 +47,14 @@ export interface Talk {
 }
 
 export const TALKS: Talk[] = [{
-    date: '2019-09-18',
+    date: '2019-10-16',
     time: '6-8pm',
-    name: 'TechTalk Discovers: Open Source Contribution',
-    eventbriteLink: 'https://www.eventbrite.com/e/kcwit-techtalk-discovers-open-source-contribution-tickets-63666010752',
-    eventbriteIFrameLink: 'eventbrite.com/tickets-external?eid=63666010752',
+    name: 'TechTalk Discovers: What Is A Digital Strategist?',
+    eventbriteLink: 'https://www.eventbrite.com/e/techtalk-discovers-what-is-a-digital-strategist-tickets-70821606331',
+    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=70821606331',
     areLinksEnabled: true
 }];
 
 // Month to display for upcoming talk. Use 7 for July, 8 for Aug, etc
-// N.B. The -1 is due to the schedule shift in 2019 and needs to be removed in 2020.
-export const UPCOMING_TALK_MONTH = 9;
+export const UPCOMING_TALK_MONTH = 1;
 

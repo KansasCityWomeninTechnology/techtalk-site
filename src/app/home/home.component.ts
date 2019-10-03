@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
     // this.mentors = MENTORS;
     this.talks = TALKS;
 
-    this.upcomingTalk = this.talks[UPCOMING_TALK_MONTH];
+    this.upcomingTalk = this.talks[UPCOMING_TALK_MONTH - 1];
 
     // bypass sanitization of the url so that we can display the iframe
-    // this.upcomingTalkTicketLink = sanitizer.bypassSecurityTrustResourceUrl(this.upcomingTalk.eventbriteIFrameLink);
+    this.upcomingTalkTicketLink = sanitizer.bypassSecurityTrustResourceUrl(this.upcomingTalk.eventbriteIFrameLink);
   }
 
   ngOnInit() {
