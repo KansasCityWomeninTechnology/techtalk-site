@@ -11,71 +11,130 @@ section {
 
 // Section specific styles
 #mission {
-  background: $white;
-  color: $dark-aqua;
-  padding: 150px 0px 100px 0px;
-  border-top: solid 10px $dark-aqua;
-  border-bottom: solid 10px $dark-aqua;
-  .networking-img {
-    margin-top: 20px;
+  background: $blue;
+  color: $white;
+  border-top: solid 10px $dark-blue;
+  border-bottom: solid 10px $dark-blue;
+  height: 640px;
+  overflow: hidden;
+
+  .container {
+    height: 100vh;
+    margin: 0;
+    max-width: 100%;
+
+    .row {
+      height: 100%;
+
+      .col-sm-6:first-of-type {
+        padding: 40px;
+      }
+    }
+  }
+
+  .mission-img {
+    //border: solid 5px #fff;
     display: block;
-    height: 300px;
-    width: 300px;
-    background: url(src/assets/images/networking.png) no-repeat 0px 0px;
-    background-size: contain;
-    margin: 0 auto;
+    height: 100%;
+    width: 50vw;
+    background-image: url(src/assets/images/mission.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -200px;
   }
 }
 
 #networking {
-    background: $white;
-    color: $dark-aqua;
-    padding: 150px 0px 100px 0px;
-    border-top: solid 10px $dark-aqua;
-    border-bottom: solid 10px $dark-aqua;
-    .networking-img {
-        margin-top: 20px;
-        display: block;
-        height: 300px;
-        width: 300px;
-        background: url(src/assets/images/networking.png) no-repeat 0px 0px;
-        background-size: contain;
-        margin: 0 auto;
+  background: $navy;
+  color: $white;
+  border-top: solid 10px $dark-navy;
+  border-bottom: solid 10px $dark-navy;
+  height: 640px;
+  overflow: hidden;
+
+  .container {
+    height: 100vh;
+    margin: 0;
+    max-width: 100%;
+
+    .row {
+      height: 100%;
+
+      .col-sm-6:nth-of-type(2) {
+        padding: 40px;
       }
+    }
+  }
+
+  .networking-img {
+    //border: solid 5px #fff;
+    display: block;
+    height: 100%;
+    width: 50vw;
+    background-image: url(src/assets/images/networking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -340px;
+    background-position-y: -80px;
+  }
 }
 
 #growth {
-    background: $light-purple;
-    text-align: center;
-    padding: 150px 0px 100px 0px;
-    border-top: solid 10px $dark-purple;
-    border-bottom: solid 10px $dark-purple;
-    img {
-        width: auto;
+  background: $green;
+  text-align: center;
+  //border-top: solid 10px $dark-green;
+
+  .container {
+    padding: 60px 0;
+
+    .col-sm-6:nth-of-type(2) {
+      padding-top: 96px;
     }
-    a {
-        color: #484e78;
+  }
+  a {
+      color: #484e78;
+  }
+  ul {
+    text-align: left;
+    padding-left: 20px;
+
+    li {
+      font-size: 1.3rem;
     }
-    ul {
-        text-align: left;
-    }
-    .cocktails {
-        display: block;
-        height: 292px;
-        width: 437px;
-        border: solid 5px #fff;
-        margin: 20px auto;
-        background: url(src/assets/images/growth.png) no-repeat 0px 0px;
-        background-size: contain;
-    }
+  }
+
+  .col-sm-6 {
+    text-align: left;
+  }
+
+  .cocktails {
+    border: solid 5px #fff;
+    display: block;
+    height: 360px;
+    width: 520px;
+    background-image: url(src/assets/images/growth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+  .cocktails2 {
+    display: block;
+    height: 400px;
+    width: 100vw;
+    background-image: url(src/assets/images/growth2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
 }
 
 #mentors {
-    background: $plum;
+    background: $blue-green;
     text-align: center;
-    padding: 150px 0px 100px 0px;
-    border-top: solid 10px $light-plum;
-    border-bottom: solid 10px $light-plum;
+    padding: 100px 0px 100px 0px;
+    border-top: solid 10px $dark-blue-green;
+    border-bottom: solid 10px $dark-blue-green;
     .mentor {
       display: flex;
       flex-direction: column;
@@ -113,14 +172,14 @@ section {
 }
 
 #signup {
-    background: $dark-olive;
-    padding: 150px 0px 100px 0px;
-    border-top: solid 10px $light-olive;
-    border-bottom: solid 10px $light-olive;
+    background: $blue;
+    padding: 100px 0px 100px 0px;
+    border-top: solid 10px $dark-blue;
+    border-bottom: solid 10px $dark-blue;
     text-align: center;
     ul {
         margin: 0px;
-        padding: 0px;
+        padding-bottom: 0.5rem;
     }
 
     .host {
@@ -129,7 +188,7 @@ section {
     }
 
     a {
-      color: $dark-purple;
+      color: $dark-blue-green;
     }
 
     #hosting-venue {

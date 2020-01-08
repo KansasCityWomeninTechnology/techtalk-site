@@ -1,12 +1,7 @@
 <section id="mission">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <div class="row">
-<!--          <div class="networking-img"></div>-->
-        </div>
-      </div>
-      <div class="col-sm-8">
+      <div class="col-sm-6">
         <h4>Our Mission</h4>
         <h5>
           TechTalks is for the curious and open-minded, who are looking for community.
@@ -15,18 +10,23 @@
           TechTalks helps make long-lasting professional and personal relationships.
         </h5>
       </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="mission-img"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 <section id="networking">
   <div class="container">
     <div class="row">
-        <div class="col-sm-4">
-          <div class="row">
-              <div class="networking-img"></div>
-          </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="networking-img"></div>
         </div>
-        <div class="col-sm-8">
+      </div>
+        <div class="col-sm-6">
           <h4>For Networking</h4>
           <h5>
             You’re not alone.
@@ -41,15 +41,18 @@
   </div>
 </section>
 <section id="growth">
+  <div class="cocktails2"></div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         <h4>For Growth</h4>
         <h5>
-            Learn from the best. TechTalks were created to be not only a networking event,
-            but an opportunity for continuous learning for skills that must constantly evolve
-            to keep up with the market. These talks will cover a wide variety of topics including:
+          Learn from the best. TechTalks were created to be not only a networking event,
+          but an opportunity for continuous learning for skills that must constantly evolve
+          to keep up with the market. These talks will cover a wide variety of topics including:
         </h5>
+      </div>
+      <div class="col-sm-6">
         <h5>
           <ul>
             <li>How to be effective in different technology roles</li>
@@ -60,9 +63,6 @@
             <li>Technical sessions for javascript, .NET, java, and more</li>
           </ul>
         </h5>
-      </div>
-      <div class="col-sm-5 align-self-center">
-          <div class="cocktails"></div>
       </div>
     </div>
   </div>
@@ -99,37 +99,34 @@
 </section>
 <section id="signup">
   <div class="container">
+<!--      <div class="row">-->
+        <h4>Sign Up!</h4>
+<!--      </div>-->
       <div class="row">
-          <div class="col-sm-12">
-              <h4>Sign Up!</h4>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-5 map">
-              <h5 id="hosting-venue">Proudly hosted by {{venue.name}}</h5>
-              <a href="{{venue.url}}" target="_blank" class="host">
-                  <img src="{{venue.img}}" alt="{{venue.name}}">
-              </a>
-              <p>{{venue.address}}</p>
-              <app-map [defaultPosition]="{lat: venue.lat, lng: venue.lng}" [defaultZoom]="zm">
-                <app-marker [position]="{lat: venue.lat, lng: venue.lng}" [animation]="'DROP'"></app-marker>
-              </app-map>
-          </div>
-          <div class="col-sm-7 align-self-center">
-              <h5>Upcoming Talk: <br>{{upcomingTalk.date | date:'fullDate'}}, {{upcomingTalk.time}}
-              <br />{{upcomingTalk.name}}</h5>
-              <div style="width:100%; text-align:left;"><iframe [attr.src]="upcomingTalkTicketLink" frameborder="0" height="325" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-12">
-             <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>
+        <div class="col-sm-6">
+          <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>
 
-             <p>If the event is not yet available for sign ups, you will be directed to the TechTalks Eventbrite page.</p>
-             <ul class="list-unstyled" *ngFor="let talk of talks">
-                  <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>
-             </ul>
-          </div>
+          <p>If the event is not yet available for sign ups, you will be directed to the TechTalks Eventbrite page.</p>
+          <ul class="list-unstyled" *ngFor="let talk of talks">
+            <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6" style="width:195px; text-align:center;" ><iframe  src="https://www.eventbrite.com/calendar-widget?eid=76825020705" frameborder="0" height="497" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:center;" ><a class="powered-by-eb" style="color: #1E374C; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
+<!--          <div class="col-sm-5 map">-->
+<!--              <h5 id="hosting-venue">Proudly hosted by {{venue.name}}</h5>-->
+<!--              <a href="{{venue.url}}" target="_blank" class="host">-->
+<!--                  <img src="{{venue.img}}" alt="{{venue.name}}">-->
+<!--              </a>-->
+<!--              <p>{{venue.address}}</p>-->
+<!--              <app-map [defaultPosition]="{lat: venue.lat, lng: venue.lng}" [defaultZoom]="zm">-->
+<!--                <app-marker [position]="{lat: venue.lat, lng: venue.lng}" [animation]="'DROP'"></app-marker>-->
+<!--              </app-map>-->
+<!--          </div>-->
+<!--          <div class="col-sm-7 align-self-center">-->
+<!--              <h5>Upcoming Talk: <br>{{upcomingTalk.date | date:'fullDate'}}, {{upcomingTalk.time}}-->
+<!--              <br />{{upcomingTalk.name}}</h5>-->
+<!--              <div style="width:100%; text-align:left;"><iframe [attr.src]="upcomingTalkTicketLink" frameborder="0" height="325" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>-->
+<!--          </div>-->
       </div>
   </div>
 </section>
