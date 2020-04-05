@@ -12,7 +12,7 @@ npm start
 To serve app and auto open browser use `ng serve` or `npm start`
 
 # How to activate links, update mentors, etc
-All data used to populate app is found in "src/data" folder. Update toolset and venue in _about.ts_, update leadershipe & mentor in _heroes.ts_, and update talk info in _talks.ts_.
+All data used to populate app is found in "src/data" folder. Update previous talks in _previoustalks.ts_, update upcoming talks in _talks.ts_, and team members info in _team.ts_.
 
 * To activate links for a talk, enable the `areLinksEnabled` flag for the talk.
 * To display next talk's ticket purchasing view:
