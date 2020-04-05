@@ -41,7 +41,7 @@
   </div>
 </section>
 <section id="growth">
-  <div class="cocktails2"></div>
+  <div class="growth-img"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
@@ -67,7 +67,25 @@
     </div>
   </div>
 </section>
-<section id="mentors">
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <h4>Meet the Team</h4>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 team-member" *ngFor="let member of team">
+          <img class="rounded-circle" src="{{member.img}}" alt="{{member.name}}"/>
+          <h6>{{member.name}}</h6>
+          <p>{{member.title}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="talks">
   <div class="container">
     <div class="row">
       <div class="col-sm-1"></div>
@@ -78,7 +96,7 @@
       <div class="col-sm-1"></div>
     </div>
     <div class="row margin-bottom" >
-      <div class="col-sm-4 mentor leader" *ngFor="let previoustalk of previoustalks">
+      <div class="col-sm-4 talk" *ngFor="let previoustalk of previoustalks">
         <a href="{{previoustalk.link}}" target="_blank">
           <img class="rounded-circle" src="{{previoustalk.img}}" alt="{{previoustalk.month}}"/>
           <h6>{{previoustalk.month}}</h6>
@@ -86,26 +104,14 @@
         </a>
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-sm-3 mentor" *ngFor="let mentor of mentors">
-        <a href="http://www.twitter.com/{{mentor.twitter}}" target="_blank">
-          <img class="rounded-circle" src="{{mentor.img}}" alt="{{mentor.name}}"/>
-          <h6>{{mentor.name}}</h6>
-          <p>{{mentor.title}}</p>
-        </a>
-      </div>
-    </div> -->
   </div>
 </section>
 <section id="signup">
   <div class="container">
-<!--      <div class="row">-->
-        <h4>Sign Up!</h4>
-<!--      </div>-->
+      <h4>Sign Up!</h4>
       <div class="row">
         <div class="col-sm-6">
           <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>
-
           <p>If the event is not yet available for sign ups, you will be directed to the TechTalks Eventbrite page.</p>
           <ul class="list-unstyled" *ngFor="let talk of talks">
             <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>
@@ -114,7 +120,7 @@
         <div class="col-sm-6" style="text-align:center;" >
           <iframe  src="https://www.eventbrite.com/calendar-widget?eid=76825020705" frameborder="0" height="560" width="200" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
           <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:center;" >
-            <a class="powered-by-eb" style="color: #1E374C; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+            <a class="powered-by-eb" style="color: #ffffff; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
           </div>
         </div>
 <!--          <div class="col-sm-5 map">-->
