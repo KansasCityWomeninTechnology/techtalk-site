@@ -2,9 +2,8 @@
 @import 'typography';
 
 #hero {
-    background: $aqua;
-    text-align: center;
-    //padding-bottom: 40px;
+  background: $aqua;
+  text-align: center;
 
   .container {
     padding: 80px 0 ;
@@ -14,30 +13,20 @@
     }
   }
 
-    .techtalks {
-      display: block;
-      height: 80px;
-      width: 300px;
-      background: url(src/assets/images/logos/techtalk_inverse.png) no-repeat 0px 0px;
-      background-size: contain;
-      margin: 0 auto;
-    }
+  .techtalks {
+    display: block;
+    height: 80px;
+    width: 300px;
+    background: url(src/assets/images/logos/techtalk_inverse.png) no-repeat 0px 0px;
+    background-size: contain;
+    margin: 0 auto;
+  }
 
-    .techtalk-image {
-      border: solid 5px #fff;
-      display: block;
-      height: 360px;
-      width: 520px;
-      background-image: url(src/assets/images/hero.jpg);
-      background-size: cover;
-    }
-
-  .techtalk-image-2 {
-    //border: solid 5px #fff;
+  .techtalk-image {
     display: block;
     height: 400px;
     width: 100vw;
-    background-image: url(src/assets/images/hero2.jpg);
+    background-image: url(src/assets/images/hero.jpg);
     background-size: cover;
     background-position-y: center;
   }

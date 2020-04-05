@@ -11,28 +11,22 @@ import { MapModule } from './shared/map/map.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FinancialAidComponent } from './financial-aid/financial-aid.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeroComponent } from './hero/hero.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MentorFormComponent } from './mentor-form/mentor-form.component';
 import { MatButtonModule, MatSnackBarModule } from '@angular/material';
-import { MentorSubmitResponseComponent } from './mentor-form/mentor-submit-response.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    FinancialAidComponent,
     HomeComponent,
     FooterComponent,
     ContactComponent,
     HeroComponent,
-    MentorFormComponent,
-    MentorSubmitResponseComponent
   ],
   imports: [
     BrowserModule,
@@ -47,9 +41,6 @@ import { MentorSubmitResponseComponent } from './mentor-form/mentor-submit-respo
     BrowserAnimationsModule,
     MatSnackBarModule,
     MatButtonModule
-  ],
-  entryComponents: [
-    MentorSubmitResponseComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -33,7 +33,6 @@ section {
   }
 
   .mission-img {
-    //border: solid 5px #fff;
     display: block;
     height: 100%;
     width: 50vw;
@@ -46,10 +45,10 @@ section {
 }
 
 #networking {
-  background: $navy;
+  background: $blue-green;
   color: $white;
-  border-top: solid 10px $dark-navy;
-  border-bottom: solid 10px $dark-navy;
+  border-top: solid 10px $dark-blue-green;
+  border-bottom: solid 10px $dark-blue-green;
   height: 640px;
   overflow: hidden;
 
@@ -68,7 +67,6 @@ section {
   }
 
   .networking-img {
-    //border: solid 5px #fff;
     display: block;
     height: 100%;
     width: 50vw;
@@ -83,7 +81,6 @@ section {
 #growth {
   background: $green;
   text-align: center;
-  //border-top: solid 10px $dark-green;
 
   .container {
     padding: 60px 0;
@@ -108,75 +105,89 @@ section {
     text-align: left;
   }
 
-  .cocktails {
-    border: solid 5px #fff;
-    display: block;
-    height: 360px;
-    width: 520px;
-    background-image: url(src/assets/images/growth.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
-  .cocktails2 {
+  .growth-img {
     display: block;
     height: 400px;
     width: 100vw;
-    background-image: url(src/assets/images/growth2.jpg);
+    background-image: url(src/assets/images/growth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
   }
 }
 
-#mentors {
-    background: $blue-green;
+#team {
+    background: $navy;
     text-align: center;
     padding: 100px 0px 100px 0px;
-    border-top: solid 10px $dark-blue-green;
-    border-bottom: solid 10px $dark-blue-green;
-    .mentor {
+    border-top: solid 10px $dark-navy;
+    border-bottom: solid 10px $dark-navy;
+
+    .team-member {
       display: flex;
       flex-direction: column;
       align-items: center;
-        a {
-            text-decoration: none;
-            color:$white;
-            display: block;
-            overflow: hidden;
-            img {
-               width: 50%;
-            }
-            p {
-              margin: 0.75rem auto 2rem auto;
-              max-width: 25ch;
-            }
-        }
-    }
+      text-decoration: none;
+      color:$white;
+      display: block;
+      overflow: hidden;
 
-    // This helps make the last two people center better when the full team
-    // is present on the site
-    // @media only screen and (min-width : 575px) {
-    //     .leader:nth-last-child(2) {
-    //         margin-left: 18%;
-    //     }
-    // }
+      img {
+         width: 50%;
+      }
+
+      p {
+        margin: 0.75rem auto 2rem auto;
+        max-width: 25ch;
+      }
+    }
 
     h6 {
         margin-top: 20px;
     }
 }
 
-#mc_embed_signup{
-    background: #666b8f !important;
+#talks {
+  background: $blue;
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+  border-top: solid 10px $dark-blue;
+  border-bottom: solid 10px $dark-blue;
+
+  .talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      display: block;
+      overflow: hidden;
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        margin: 0.75rem auto 2rem auto;
+        max-width: 25ch;
+      }
+    }
+  }
+
+  h6 {
+    margin-top: 20px;
+  }
 }
 
 #signup {
-    background: $blue;
+    background: $blue-green;
     padding: 100px 0px 100px 0px;
-    border-top: solid 10px $dark-blue;
-    border-bottom: solid 10px $dark-blue;
+    border-top: solid 10px $dark-blue-green;
+    border-bottom: solid 10px $dark-blue-green;
     text-align: center;
+
     ul {
         margin: 0px;
         padding-bottom: 0.5rem;
@@ -188,7 +199,7 @@ section {
     }
 
     a {
-      color: $dark-blue-green;
+      color: $white;
     }
 
     #hosting-venue {
