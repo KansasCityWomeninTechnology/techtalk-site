@@ -32,10 +32,13 @@
     "bootstrap": "^4.1.3",
     "googlemaps": "^1.12.0",
     "hammerjs": "^2.0.8",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.5",
     "ngx-bootstrap": "^3.0.0-RC.1",
     "ngx-page-scroll": "^5.0.0",
     "popper.js": "^1.14.1",
     "rxjs": "~6.4.0",
+    "serialize-javascript": "^3.0.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
