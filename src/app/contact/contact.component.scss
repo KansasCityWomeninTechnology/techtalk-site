@@ -3,8 +3,12 @@
 
 #contact {
     background: $white;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 40px;
     border-bottom: solid 10px $dark-aqua;
+
+    @media (max-width: 768px) {
+      padding: 60px 40px;
+    }
     img {
         margin-bottom: 30px;
     }

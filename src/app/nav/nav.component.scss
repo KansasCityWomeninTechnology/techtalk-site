@@ -17,3 +17,27 @@
         opacity: 0.75;
     }
 }
+
+@media (max-width: 768px) {
+  button {
+    margin-left: 0.5rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-item {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+
+    .dropdown-menu {
+      background-color: $aqua;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
