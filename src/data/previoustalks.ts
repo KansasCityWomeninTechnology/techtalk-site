@@ -6,6 +6,18 @@ export interface PreviousTalk {
 }
 
 export const PREVIOUSTALKS: PreviousTalk[] = [{
+  month: 'January 2020',
+  title: 'Getting Involved in the New Year',
+  img: '/assets/images/archive/jan20.jpg',
+  link: 'https://kcwomenintech.org/2020-techtalk-kickoff-getting-involved-in-the-new-year/'
+},
+{
+  month: 'October 2019',
+  title: 'What is a Digital Strategist?',
+  img: '/assets/images/archive/oct19.jpg',
+  link: 'https://kcwomenintech.org/october-2019-techtalk-what-is-a-digital-strategist/'
+},
+{
     month: 'July 2019',
     title: 'KCDC Diversity Celebration',
     img: '/assets/images/archive/july19.jpg',
@@ -25,14 +37,4 @@ export const PREVIOUSTALKS: PreviousTalk[] = [{
     title: "KCWiT Celebration International Women's Day",
     img: '/assets/images/archive/march19.jpg',
     link: 'https://kcwomenintech.org/march-techtalk-kcwit-international-womens-day/'
-}, {
-    month: 'February 2019',
-    title: 'Optimize Your LinkedIn and Resume to Land Your Dream Job',
-    img: '/assets/images/archive/february19.jpg',
-    link: 'https://kcwomenintech.org/optimize-your-linkedin-and-resume-land-your-dream-job/'
-}, {
-    month: 'January 2019',
-    title: '2019 Kick-Off',
-    img: '/assets/images/archive/january19.jpg',
-    link: 'https://kcwomenintech.org/january-techtalk-2019-kick-off/'
 }];
