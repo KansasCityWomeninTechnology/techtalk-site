@@ -195,11 +195,20 @@ section {
 }
 
 #signup {
-    background: $blue;
+    background: $blue-green;
     padding: 100px 40px;
-    border-top: solid 10px $dark-blue;
-    border-bottom: solid 10px $dark-blue;
+    border-top: solid 10px $dark-blue-green;
+    border-bottom: solid 10px $dark-blue-green;
     text-align: center;
+
+    h5 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
 
     ul {
         margin: 0px;
