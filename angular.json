@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cocktails-site": {
+    "techtalk-site": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cocktails-site:build"
+            "browserTarget": "techtalk-site:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cocktails-site:build:production"
+              "browserTarget": "techtalk-site:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cocktails-site:build"
+            "browserTarget": "techtalk-site:build"
           }
         },
         "test": {
@@ -125,16 +125,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cocktails-site:serve"
+            "devServerTarget": "techtalk-site:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cocktails-site:serve:production"
+              "devServerTarget": "techtalk-site:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "cocktails-site"
+  "defaultProject": "techtalk-site"
 }
