@@ -5,20 +5,20 @@ export interface Member {
 }
 
 export const TEAM: Member[] = [{
-    name: 'Alison Renfro',
-    title: 'Events Director',
-    img: 'assets/images/team/alison.jpg'
+    name: 'Lulu Cao',
+    title: 'Program Director',
+    img: 'assets/images/team/lulu.jpg'
 }, {
-    name: 'Dasia Mendez',
-    title: 'Events Sponsorship Director',
-    img: 'assets/images/team/dasia.jpg'
+    name: 'Kristin Pierpoline',
+    title: 'Program Co-Director',
+    img: 'assets/images/team/kristin.png'
 }, {
-    name: 'Erin Bradley',
-    title: 'Attendee Director',
-    img: 'assets/images/team/erin.jpg'
+    name: 'Dani Hebert-Ice',
+    title: 'Marketing Coordinator',
+    img: 'assets/images/team/dani.png'
 },
 {
-  name: 'Erin Badder',
-  title: 'Marketing Director',
-  img: 'assets/images/team/erin_b.jpg'
+  name: 'Paula Back',
+  title: 'Event Coordinator',
+  img: 'assets/images/team/paula.png'
 }];
