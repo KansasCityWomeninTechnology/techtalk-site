@@ -108,41 +108,38 @@
 </section>
 <section id="signup">
   <div class="container">
-      <h4>TechTalks in {{talks[0].date | date: 'y'}}</h4>
+      <h4>Upcoming Event in {{talks[0].date | date: 'y'}}</h4>
       <div class="row">
-        <div class="col-sm-6">
-<!--          <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>-->
-          <h5>Our COVID-19 Response</h5>
-          <p>We are looking forward to bringing you online programming and networking opportunities as we continue to social distance. <br>
-            To protect the health and safety of our volunteers and attendees, <br>
-            we will be providing our KC Women in Tech events virtually for 2020. <br>
-            Stayed tuned as we bring you more information regarding how you can join us online this year! <br>
-          </p>
-<!--          <ul class="list-unstyled" *ngFor="let talk of talks">-->
-<!--            <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>-->
-<!--          </ul>-->
-        </div>
-        <div class="col-sm-6" style="text-align:center;" >
-          <iframe  src="https://www.eventbrite.com/calendar-widget?eid=76825020705" frameborder="0" height="560" width="200" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
-          <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:center;" >
-            <a class="powered-by-eb" style="color: #ffffff; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+        <!-- Forecast of events in the current year -->
+        <!-- <div class="">
+          <h5>{{talks[0].date | date: 'y'}} TechTalks</h5>
+          <ul class="list-unstyled" *ngFor="let talk of talks">
+            <li><b>{{talk.date | date:'MMMM d'}}th</b> - <a href="{{talk.eventbriteLink}}" target="_blank">{{talk.name}}</a></li>
+          </ul>
+        </div> -->
+
+        <!-- Promotion of venue sponsor -->
+        <!-- <div class="col-sm-5 map">
+          <h5 id="hosting-venue">Proudly hosted by {{venue.name}}</h5>
+          <a href="{{venue.url}}" target="_blank" class="host">
+            <img src="{{venue.img}}" alt="{{venue.name}}">
+          </a>
+          <p>{{venue.address}}</p>
+          <app-map [defaultPosition]="{lat: venue.lat, lng: venue.lng}" [defaultZoom]="zm">
+            <app-marker [position]="{lat: venue.lat, lng: venue.lng}" [animation]="'DROP'"></app-marker>
+          </app-map>
+        </div> -->
+
+        <!-- Upcoming events -->
+        <div style="text-align: center; width: 100vw;">
+          <!-- <h5>Upcoming Talk:
+            <br>{{upcomingTalk.date | date:'fullDate'}}, {{upcomingTalk.time}}
+            <br />{{upcomingTalk.name}}
+          </h5> -->
+          <div style="width:100%; text-align:left;">
+            <iframe [attr.src]="upcomingTalkTicketLink" frameborder="0" height="325" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
           </div>
         </div>
-<!--          <div class="col-sm-5 map">-->
-<!--              <h5 id="hosting-venue">Proudly hosted by {{venue.name}}</h5>-->
-<!--              <a href="{{venue.url}}" target="_blank" class="host">-->
-<!--                  <img src="{{venue.img}}" alt="{{venue.name}}">-->
-<!--              </a>-->
-<!--              <p>{{venue.address}}</p>-->
-<!--              <app-map [defaultPosition]="{lat: venue.lat, lng: venue.lng}" [defaultZoom]="zm">-->
-<!--                <app-marker [position]="{lat: venue.lat, lng: venue.lng}" [animation]="'DROP'"></app-marker>-->
-<!--              </app-map>-->
-<!--          </div>-->
-<!--          <div class="col-sm-7 align-self-center">-->
-<!--              <h5>Upcoming Talk: <br>{{upcomingTalk.date | date:'fullDate'}}, {{upcomingTalk.time}}-->
-<!--              <br />{{upcomingTalk.name}}</h5>-->
-<!--              <div style="width:100%; text-align:left;"><iframe [attr.src]="upcomingTalkTicketLink" frameborder="0" height="325" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe></div>-->
-<!--          </div>-->
       </div>
   </div>
 </section>
