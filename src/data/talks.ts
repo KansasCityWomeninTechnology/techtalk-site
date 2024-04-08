@@ -51,7 +51,7 @@ export const TALKS: Talk[] = [{
     time: '6-8pm',
     name: 'TechTalk January',
     eventbriteLink: 'https://www.eventbrite.com/e/coding-cocktails-the-liquor-intro-to-javascript-tickets-862499748967',
-    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=862499748967',
+    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=862499748967&ref=ccweb',
     areLinksEnabled: true
 },
   {
@@ -144,5 +144,6 @@ export const TALKS: Talk[] = [{
   }];
 
 // Month to display for upcoming talk. Use 7 for July, 8 for Aug, etc
-export const UPCOMING_TALK_MONTH = 1;
+// This should be the index + 1 of the month in the TALKS array
+export const UPCOMING_TALK_MONTH = 0 + 1;
 
