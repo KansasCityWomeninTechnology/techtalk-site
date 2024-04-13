@@ -50,8 +50,8 @@ export const TALKS: Talk[] = [{
     date: '2024-01-12',
     time: '6-8pm',
     name: 'TechTalk January',
-    eventbriteLink: 'https://www.eventbrite.com/e/coding-cocktails-the-liquor-intro-to-javascript-tickets-862499748967',
-    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=862499748967&ref=ccweb',
+    eventbriteLink: 'https://www.eventbrite.com/e/kcwit-techtalks-career-panel-taking-action-to-grow-your-career-tickets-881654120207',
+    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=881654120207',
     areLinksEnabled: true
 },
   {
