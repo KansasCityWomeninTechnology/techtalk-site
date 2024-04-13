@@ -9,6 +9,8 @@ npm install
 npm start
 ```
 
+To deploy, make sure you are added as a collaborate to our Firebase project techtalk-site. Then `firebase deploy`.
+
 To serve app and auto open browser use `ng serve` or `npm start`
 
 # How to activate links, update mentors, etc
