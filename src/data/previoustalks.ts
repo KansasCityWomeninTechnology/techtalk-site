@@ -6,40 +6,40 @@ export interface PreviousTalk {
 }
 
 export const PREVIOUSTALKS: PreviousTalk[] = [{
-  month: 'March 2020',
-  title: 'International Women’s Day Celebration',
+  month: 'April 2024',
+  title: 'Career Panel: Taking Action to Grow Your Career',
   img: '/assets/images/archive/march20.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  link: '#'
 },
 {
-  month: 'February 2020',
-  title: 'Landing an Internship in Tech',
+  month: 'March 2024',
+  title: "Women's History Month",
   img: '/assets/images/archive/feb20.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  link: '#'
 },
 {
-  month: 'January 2020',
-  title: 'Getting Involved in the New Year',
+  month: 'January 2024',
+  title: 'Why AI Needs More Women',
   img: '/assets/images/archive/jan20.jpg',
-  link: 'https://kcwomenintech.org/2020-techtalk-kickoff-getting-involved-in-the-new-year/'
+  link: '#'
 },
 {
-  month: 'December 2019',
-  title: 'KCWiT 2019 Holiday Party',
+  month: 'December 2023',
+  title: 'KCWiT 2023 Holiday Party',
   img: '/assets/images/archive/dec19.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  link: '#'
 },
 {
-  month: 'November 2019',
-  title: 'TechTalk’s Annual TechWalk',
+  month: 'November 2023',
+  title: 'Tech for Good',
   img: '/assets/images/archive/nov19.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  link: '#'
 },
 {
-  month: 'October 2019',
-  title: 'What is a Digital Strategist?',
+  month: 'October 2023',
+  title: 'Agile in Action',
   img: '/assets/images/archive/oct19.jpg',
-  link: 'https://kcwomenintech.org/october-2019-techtalk-what-is-a-digital-strategist/'
+  link: '#'
 },
 // {
 //     month: 'July 2019',

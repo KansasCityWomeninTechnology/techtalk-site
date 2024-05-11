@@ -71,7 +71,7 @@ export const TALKS: Talk[] = [{
     areLinksEnabled: true
   },
   {
-    date: '2020-04-12',
+    date: '2020-04-26',
     time: '6-8pm',
     name: 'TechTalk April',
     eventbriteLink: 'https://www.eventbrite.com/e/kcwit-techtalks-career-panel-taking-action-to-grow-your-career-tickets-881654120207',
@@ -79,11 +79,11 @@ export const TALKS: Talk[] = [{
     areLinksEnabled: true
   },
   {
-    date: '2020-05-12',
+    date: '2020-05-21',
     time: '6-8pm',
     name: 'TechTalk May',
-    eventbriteLink: 'https://www.eventbrite.com/e/kcwit-techtalks-career-panel-taking-action-to-grow-your-career-tickets-881654120207',
-    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=881654120207',
+    eventbriteLink: 'https://www.eventbrite.com/e/kcwit-techtalks-conference-success-tickets-898765530897',
+    eventbriteIFrameLink: '//eventbrite.com/tickets-external?eid=898765530897',
     areLinksEnabled: true
   },
   {
@@ -145,5 +145,5 @@ export const TALKS: Talk[] = [{
 
 // Month to display for upcoming talk. Use 7 for July, 8 for Aug, etc
 // This should be the index + 1 of the month in the TALKS array
-export const UPCOMING_TALK_MONTH = 3 + 1;
+export const UPCOMING_TALK_MONTH = 4 + 1;
 
