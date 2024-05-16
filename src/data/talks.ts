@@ -145,5 +145,5 @@ export const TALKS: Talk[] = [{
 
 // Month to display for upcoming talk. Use 7 for July, 8 for Aug, etc
 // This should be the index + 1 of the month in the TALKS array
-export const UPCOMING_TALK_MONTH = 4 + 1;
+export const UPCOMING_TALK_MONTH = 5 + 1;
 
