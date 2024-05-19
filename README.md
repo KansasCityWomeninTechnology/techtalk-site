@@ -2,30 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
 
-To get going
+## Local Development
+To get going:
 ```bash
 git clone
 npm install
-npm start
+ng serve
 ```
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To deploy, make sure you are added as a collaborate to our Firebase project techtalk-site. Then `firebase deploy`.
+## Deploy
+```
+ng build
+firebase deploy
+```
+To deploy, make sure you are added as a collaborator to our Firebase project techtalk-site and logged in during your command line session.
 
-To serve app and auto open browser use `ng serve` or `npm start`
-
-# How to activate links, update mentors, etc
+## How to activate links, update mentors, etc
 All data used to populate app is found in "src/data" folder. Update previous talks in _previoustalks.ts_, update upcoming talks in _talks.ts_, and team members info in _team.ts_.
 
 * To activate links for a talk, enable the `areLinksEnabled` flag for the talk.
 * To display next talk's ticket purchasing view:
     1. Make sure the talk's `eventbriteIFrameLink` is populated
     1. Set the `UPCOMING_TALK_MONTH` for the talk to display using the integer representation for the month (ie 7 for July)
-
-
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
