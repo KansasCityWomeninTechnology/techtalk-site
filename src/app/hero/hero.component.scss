@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'typography';
 
+
 #hero {
   background: $aqua;
   text-align: center;
@@ -32,3 +33,6 @@
   }
 }
 
+h2 {
+  font-weight: 400;
+}

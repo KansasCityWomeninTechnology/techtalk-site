@@ -9,6 +9,10 @@ section {
     }
 }
 
+h5 {
+  font-weight: 300;
+}
+
 // Section specific styles
 #mission {
   background: $blue;
@@ -201,13 +205,9 @@ section {
     border-bottom: solid 10px $dark-blue-green;
     text-align: center;
 
-    h5 {
-      font-weight: 400;
-    }
-
     p {
       font-size: 1.5rem;
-      font-weight: 100;
+      font-weight: 300;
     }
 
     ul {
