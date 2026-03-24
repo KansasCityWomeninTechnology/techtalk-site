@@ -6,60 +6,45 @@ export interface PreviousTalk {
 }
 
 export const PREVIOUSTALKS: PreviousTalk[] = [{
-  month: 'March 2020',
-  title: 'International Women’s Day Celebration',
-  img: '/assets/images/archive/march20.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  month: 'April 2024',
+  title: 'Career Panel: Taking Action to Grow Your Career',
+  img: '/assets/images/archive/career.jpg',
+  link: '#'
 },
 {
-  month: 'February 2020',
-  title: 'Landing an Internship in Tech',
-  img: '/assets/images/archive/feb20.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  month: 'March 2024',
+  title: "Women's History Month: How Will You Make History?",
+  img: '/assets/images/archive/women-history.jpeg',
+  link: '#'
 },
 {
-  month: 'January 2020',
-  title: 'Getting Involved in the New Year',
-  img: '/assets/images/archive/jan20.jpg',
-  link: 'https://kcwomenintech.org/2020-techtalk-kickoff-getting-involved-in-the-new-year/'
+  month: 'January 2024',
+  title: 'Why AI Needs More Women: Fostering Diversity in the Age of Intelligence',
+  img: '/assets/images/archive/liji.jpg',
+  link: '#'
 },
 {
-  month: 'December 2019',
-  title: 'KCWiT 2019 Holiday Party',
-  img: '/assets/images/archive/dec19.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  month: 'December 2023',
+  title: 'KCWiT 2023 Holiday Party',
+  img: '/assets/images/archive/holiday.jpg',
+  link: '#'
 },
 {
-  month: 'November 2019',
-  title: 'TechTalk’s Annual TechWalk',
-  img: '/assets/images/archive/nov19.jpg',
-  link: 'https://kcwomenintech.org/blog/'
+  month: 'November 2023',
+  title: 'Tech for Good: Harnessing Technology for Positive Impact',
+  img: '/assets/images/archive/tech-for-good.jpeg',
+  link: '#'
 },
 {
-  month: 'October 2019',
-  title: 'What is a Digital Strategist?',
-  img: '/assets/images/archive/oct19.jpg',
-  link: 'https://kcwomenintech.org/october-2019-techtalk-what-is-a-digital-strategist/'
+  month: 'October 2023',
+  title: 'Agile in Action: Delving into Effective Development',
+  img: '/assets/images/archive/agile.jpeg',
+  link: '#'
 },
 // {
 //     month: 'July 2019',
 //     title: 'KCDC Diversity Celebration',
 //     img: '/assets/images/archive/july19.jpg',
 //     link: 'https://kcwomenintech.org/july-2019-techtalk-kcdc-diversity-celebration/'
-// }, {
-//     month: 'May 2019',
-//     title: 'Working Remote',
-//     img: '/assets/images/archive/may19.jpg',
-//     link: 'https://kcwomenintech.org/may-2019-techtalk-working-remote/'
-// }, {
-//     month: 'April 2019',
-//     title: 'What is Product Management?',
-//     img: '/assets/images/archive/april19.jpg',
-//     link: 'https://kcwomenintech.org/what-is-product-management/'
-// }, {
-//     month: 'March 2019',
-//     title: "KCWiT Celebration International Women's Day",
-//     img: '/assets/images/archive/march19.jpg',
-//     link: 'https://kcwomenintech.org/march-techtalk-kcwit-international-womens-day/'
-// }
+// },
 ];
